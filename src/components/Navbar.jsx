@@ -33,7 +33,7 @@ const Navbar = () => {
     }
     return (
         <div className='sm:px-[5vw] md:px-[7vw] lg:px-[9vw] flex items-center justify-between py-4 border-b  border-[#989898]'>
-            <Link to='/' className='text-2xl sm:text-4xl text-white cursor-pointer logo'>Crypto Hawk</Link>
+            <Link to='/' className='text-xl sm:text-2xl md:text-4xl text-white cursor-pointer logo'>Crypto Hawk</Link>
             <div>
                 <ul className='hidden text-white lg:flex gap-8 items-center  text-lg'>
                     <Link to='/' className='text-[#b243ee]'><li >Home</li></Link>

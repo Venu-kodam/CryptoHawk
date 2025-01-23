@@ -8,7 +8,7 @@ import WatchList from './pages/WatchList'
 import { ToastContainer } from 'react-toastify'
 const App = () => {
   return (
-    <div className='px-4  min-h-screen bg-gradient-to-r from-[#0b004e] to-[#1d152f]'>
+    <div className='px-3  min-h-screen bg-gradient-to-r from-[#0b004e] to-[#1d152f]'>
       <ToastContainer position='bottom-right'/>
       <Navbar />
       <Routes>
