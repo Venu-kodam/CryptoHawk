@@ -66,4 +66,4 @@ Welcome to **Crypto Hawk** !  It's a web application that allows users to explor
 4. **Currency Dropdown:**
     - Change the base currency (e.g., USD, INR, EUR) dynamically, and all prices update accordingly.
 
-#### Live url : 
+#### Live url : https://cryptohawk.netlify.app/
