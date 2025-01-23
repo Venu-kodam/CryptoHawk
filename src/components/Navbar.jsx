@@ -33,7 +33,7 @@ const Navbar = () => {
     }
     return (
         <div className='sm:px-[5vw] md:px-[7vw] lg:px-[9vw] flex items-center justify-between py-4 border-b  border-[#989898]'>
-            <Link to='/' className='text-xl sm:text-2xl md:text-4xl text-white cursor-pointer logo'>Crypto Hawk</Link>
+            <Link to='/' className='text-lg sm:text-2xl md:text-4xl text-white cursor-pointer logo'>Crypto Hawk</Link>
             <div>
                 <ul className='hidden text-white lg:flex gap-8 items-center  text-lg'>
                     <Link to='/' className='text-[#b243ee]'><li >Home</li></Link>
@@ -42,7 +42,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className='flex gap-4 '>
-                <select onChange={currencyHandler} className=' px-2 bg-[#1e3037] border border-white text-white sm:px-3 rounded-lg cursor-pointer'>
+                <select onChange={currencyHandler} className='px-1 bg-[#1e3037] border border-white text-white sm:px-3 rounded-lg cursor-pointer'>
                     <option value="usd">USD</option>
                     <option value="inr">INR</option>
                     <option value="eur">EUR</option>
@@ -50,7 +50,7 @@ const Navbar = () => {
                 {
                     user ? 
                     <div className='text-white flex items-center gap-3'>
-                        <Link to='/watchlist/' className='flex items-center gap-2 mr-4 hover:text-[#b243ee]'><img src= {favorite} className='text-white w-5 h-5' alt="" /> Watchlist</Link>
+                        <Link to='/watchlist/' className='flex items-center gap-2 sm:mr-4 hover:text-[#b243ee]'><img src= {favorite} className='text-white w-5 h-5' alt="" /> Watchlist</Link>
                         <UserButton />
                     </div>
                         : <button onClick={e => openSignIn()} className='bg-white px-6 sm:px-10 py-1.5 rounded-full shadow-[2px_3px_10px_#ffff]'>Signup</button>

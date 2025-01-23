@@ -108,7 +108,7 @@ const Coin = () => {
       coinData && chartdata ? (
         <>
           <div className='flex flex-col  md:flex-row gap-3 xl:gap-12 px-3 xl:px-10'>
-            <div className='md:min-w-[460px] lg:min-w-[600px] xl:min-w-[900px]  bg-[#1e3037] my-4 rounded-xl  max-h-fit shadow-[2px_3px_20px_#442c5e]'>
+            <div className='md:max-w-[450px] lg:min-w-[600px] xl:min-w-[900px]  bg-[#1e3037] my-4 rounded-xl  max-h-fit shadow-[2px_3px_20px_#442c5e]'>
               <div className=' text-white  px-3 lg:px-10'>
                 <div className=' flex flex-col gap-4'>
                   <div className='flex items-center gap-2 mt-4' >

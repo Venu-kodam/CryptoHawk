@@ -54,7 +54,7 @@ const Home = () => {
                     (
                         <div>
                             <div className='max-w-4xl bg-gradient-to-b from-[rgba(84,3,255,0.15)] to-[rgba(105,2,153,0.15)] mx-auto mt-12 rounded-lg'>
-                                <div className='grid grid-cols-[0.3fr_0.5fr_3fr_1fr_1fr] sm:grid-cols-[0.3fr_0.5fr_2fr_1fr_1fr_1.5fr] py-4 px-5 mx-auto border-b-[1px] border-zinc-400 text-[#dedddd]'>
+                                <div className='grid grid-cols-[0.3fr_0.5fr_3fr_2fr_1fr] sm:grid-cols-[0.3fr_0.5fr_2fr_1fr_1fr_1.5fr] py-4 px-5 mx-auto border-b-[1px] border-zinc-400 text-[#dedddd]'>
                                     <p></p>
                                     <p>#</p>
                                     <p>Coin</p>
@@ -64,7 +64,7 @@ const Home = () => {
                                 </div>
                                 {
                                     displayCoins.slice((page - 1) * 10, (page - 1) * 10 + 10).map((item, index) => (
-                                        <Link to={`/coin/${item.id}`} key={index} className='grid grid-cols-[0.3fr_0.5fr_3fr_1fr_1fr] items-center sm:grid-cols-[0.3fr_0.5fr_2fr_1fr_1fr_1.5fr] py-4 px-5 mx-auto border-b-[1px] border-zinc-400 last:border-none'>
+                                        <Link to={`/coin/${item.id}`} key={index} className='grid grid-cols-[0.3fr_0.5fr_3fr_2fr_1fr] items-center sm:grid-cols-[0.3fr_0.5fr_2fr_1fr_1fr_1.5fr] py-4 px-5 mx-auto border-b-[1px] border-zinc-400 last:border-none'>
                                             <img onClick={(e) => {
                                                 e.preventDefault();
                                                 toggleWatchlist(item);

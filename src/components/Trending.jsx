@@ -14,10 +14,9 @@ const Trending = () => {
                         <div className='flex gap-2'>
                             <img src={coin.item.small} className='w-5 h-5' alt="" />
                             <div className='flex gap-1'>
-                                <span className='md:hidden lg:block'>{coin.item.name}</span>
+                                <span className='hidden sm:block md:hidden lg:block'>{coin.item.name}</span>
                                 <span> ({coin.item.symbol})</span>
                             </div>
-                            
                         </div>
                         <div>
                             <p className={`px-2  rounded-full flex items-center gap-1 ${coin.item.data.price_change_percentage_24h[currency.name] > 0 ? 'text-[#14B079] bg-[#EBF9F4]' : 'text-[#FF4646] bg-[#feaaaa]'}`}>
